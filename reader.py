@@ -197,7 +197,7 @@ class Reader :
     def reset(self):
     
         print 'reset'
-        self.wr(MF522.CommandReg, 0x0f)
+        self.wr(MF522.CommandReg, PCD.RESETPHASE)
     
         self.wr(MF522.ModeReg, 0x3d)
     
